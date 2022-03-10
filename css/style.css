@@ -36,6 +36,9 @@ body {
   margin-top: 4rem;
   font-size: 1.6rem;
   width: 50%; }
+  @media only screen and (max-width: 37.5em) {
+    .voorstelling {
+      width: 70%; } }
 
 /*arrow*/
 .arrow {
@@ -58,6 +61,10 @@ body {
     text-decoration: none; }
 
 /*spotlights*/
+@media only screen and (max-width: 37.5em) {
+  .spotlight {
+    visibility: hidden; } }
+
 .spotlight__spotlight1 {
   width: 20rem;
   height: 20rem;
@@ -66,6 +73,9 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 2rem 2rem 2rem rgba(5, 5, 5, 0.5);
   animation: spot 10s infinite alternate-reverse; }
+  @media only screen and (max-width: 37.5em) {
+    .spotlight__spotlight1 {
+      animation: none; } }
 
 .spotlight__spotlight2 {
   width: 20rem;
@@ -75,6 +85,9 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: -2rem 2rem 2rem rgba(5, 5, 5, 0.5);
   animation: spot2 8s infinite alternate-reverse; }
+  @media only screen and (max-width: 37.5em) {
+    .spotlight__spotlight2 {
+      animation: none; } }
 
 /*index2*/
 /*header*/
@@ -97,7 +110,10 @@ body {
   .navigation__item {
     padding: 2rem;
     font-size: 1.3rem;
-    position: relative; }
+    position: relative;
+    transition: all .2s; }
+    .navigation__item:hover {
+      transform: scale(1.2) rotate(5deg); }
     @media only screen and (max-width: 37.5em) {
       .navigation__item {
         font-size: 1.5rem;
@@ -150,7 +166,13 @@ body {
   display: flex;
   border: 1px solid;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 1rem 1.5rem 2rem rgba(0, 0, 0, 0.6);
+  transition: all .3s; }
+  .blogvb:hover {
+    background-color: rgba(146, 146, 146, 0.6);
+    transform: scale(1.1);
+    box-shadow: 1.3rem 2rem 2.3rem rgba(0, 0, 0, 0.4); }
   @media only screen and (max-width: 37.5em) {
     .blogvb {
       width: 100%;
@@ -177,6 +199,13 @@ body {
     border-radius: 10px; }
   .theatre__caption {
     font-size: 2rem; }
+
+.contact {
+  margin-top: 15rem;
+  font-size: 1.4rem;
+  text-align: center; }
+  .contact__link {
+    color: inherit; }
 
 @keyframes jump {
   0% {
@@ -211,7 +240,10 @@ body {
     margin-right: -75rem; }
   100% {
     margin-bottom: 80%;
-    margin-right: 50%; } }
+    margin-right: 50%;
+    @media only screen and (max-width: 37.5em) {
+      margin-bottom: 30%;
+      margin-right: 30%; } } }
 
 @keyframes jump {
   0% {
@@ -220,6 +252,12 @@ body {
   100% {
     transform: translateY(0);
     box-shadow: 0rem 1rem 1.5rem rgba(0, 0, 0, 0.4); } }
+
+@keyframes point {
+  0% {
+    transform: translateX(1rem); }
+  100% {
+    transform: translateX(0); } }
 
 .headings {
   font-family: 'The Nautigal', cursive;
@@ -271,9 +309,11 @@ body {
   flex-direction: column; }
 
 .footer {
-  border-radius: 4px;
-  background-image: url(../img/);
-  background-size: cover; }
+  margin-top: 10rem;
+  background-image: url(../img/rope2-removebg-preview.png);
+  background-repeat: repeat;
+  background-size: 30%;
+  background-position: 100%; }
 
 .copy {
   padding: 5rem 10rem; }
@@ -285,6 +325,8 @@ body {
     text-decoration: none;
     color: inherit;
     border-bottom: solid 1px; }
+  .meerlezen:hover {
+    animation: point .8s infinite alternate-reverse; }
 
 .arow {
   display: flex;
@@ -299,7 +341,10 @@ body {
   animation: jump 1s infinite alternate-reverse; }
   .arow__link {
     color: inherit;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 2rem; }
+  .arow:hover {
+    background-color: rgba(247, 157, 202, 0.473); }
 
 .btn {
   margin-top: 1.5rem;
@@ -366,11 +411,15 @@ body {
     border-bottom: 1px solid #fff; }
     @media only screen and (max-width: 37.5em) {
       .form__input {
-        width: 90%; } }
+        width: 100%; } }
   .form__reacties-profile {
     width: 5rem;
     height: 5rem;
     border-radius: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .form__reacties-profile {
+        width: 7rem;
+        height: 7rem; } }
   .form__reacties-text {
     padding-top: 2rem;
     border-bottom: 1px solid; }
