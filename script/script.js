@@ -4,12 +4,16 @@ let greeting;
 
 if (hourNow > 18) {
     greeting = "Goedeavond"
+} else if (hourNow > 14) {
+    greeting = "Prettige namiddag!"
 } else if (hourNow > 12) {
-    greeting = "Goedemiddag"
+    greeting = "Goedemiddag!"
+} else if (hourNow > 10) {
+    greeting = "Prettige voorcd middag!"
 } else if (hourNow > 0) {
-    greeting = " Goedemorgen"
+    greeting = " Goedemorgen!"
 } else {
-    greeting = "Welkom"
+    greeting = "Welkom!"
 }
 
 
