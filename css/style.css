@@ -169,19 +169,24 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 1rem 1.5rem 2rem rgba(0, 0, 0, 0.6);
   transition: all .3s; }
+  @media only screen and (max-width: 37.5em) {
+    .blogvb {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      align-items: center; } }
   .blogvb:hover {
     background-color: rgba(146, 146, 146, 0.6);
     transform: scale(1.1);
     box-shadow: 1.3rem 2rem 2.3rem rgba(0, 0, 0, 0.4); }
-  @media only screen and (max-width: 37.5em) {
-    .blogvb {
-      width: 100%;
-      margin-left: 0; } }
 
 .beelden__afbeeldingen {
   margin-left: 1rem;
   display: block;
   border-radius: 3px; }
+  @media only screen and (max-width: 37.5em) {
+    .beelden__afbeeldingen {
+      margin-bottom: 2rem; } }
   .beelden__afbeeldingen-3 {
     width: 20rem;
     height: 20rem; }
@@ -189,6 +194,10 @@ body {
 .verhalen {
   margin-left: 2rem;
   font-size: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .verhalen {
+      border-top: solid 1px;
+      padding-top: 3rem; } }
 
 .theatre {
   text-align: center; }
@@ -206,6 +215,10 @@ body {
   text-align: center; }
   .contact__link {
     color: inherit; }
+
+.video {
+  text-align: center;
+  margin-top: 15rem; }
 
 @keyframes jump {
   0% {
@@ -309,14 +322,25 @@ body {
   flex-direction: column; }
 
 .footer {
+  height: 50vh;
   margin-top: 10rem;
   background-image: url(../img/rope2-removebg-preview.png);
-  background-repeat: repeat;
-  background-size: 30%;
-  background-position: 100%; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      height: 30vh;
+      margin-top: 5rem; } }
 
 .copy {
-  padding: 5rem 10rem; }
+  padding-top: 40vh;
+  padding-left: 20rem;
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .copy {
+      padding-top: 20vh;
+      padding-left: 15rem; } }
 
 .meerlezen {
   margin-top: 10rem;
