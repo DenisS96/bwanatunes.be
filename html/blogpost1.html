@@ -77,9 +77,9 @@
 
 
                     <form class="form__form" action="">
-                        <label for="name">Naam:</label>
+                        <label class="form__text" for="name">Naam:</label>
                         <input type="text" id="name-box" name="name" class="form__input" required>
-                        <label for="comment-box">Jou mening</label>
+                        <label class="form__text" for="comment-box">Jou mening</label>
                         <textarea name="comment" class="form__input" id="comment-box" cols="30" rows="10"
                             required></textarea>
 
@@ -90,15 +90,13 @@
 
                     <div class="form__reacties">
 
+
+
                         <div class="form__reacties-comment">
-                            <img src="../img/person.jpg" alt="persoon" class="form__reacties-profile">
-                            <p><b>Jean</b></p>
-                            <p class="form__reacties-text">Wauw wat een super begin, ik wens jullie het beste toe</p>
+                            <ul class="list-item" id="unordered">
 
+                            </ul>
                         </div>
-                        <ul class="list-item"id="unordered">
-
-                        </ul>
                     </div>
                 </div>
 

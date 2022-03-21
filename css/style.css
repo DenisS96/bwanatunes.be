@@ -443,6 +443,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .form__form {
         margin-left: 0; } }
+  .form__text {
+    margin-top: 1.5rem; }
   .form__input {
     width: 100%;
     background-color: rgba(253, 246, 246, 0.2);
@@ -451,33 +453,30 @@ body {
     @media only screen and (max-width: 37.5em) {
       .form__input {
         width: 100%; } }
-  .form__reacties-profile {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%; }
-    @media only screen and (max-width: 37.5em) {
-      .form__reacties-profile {
-        width: 7rem;
-        height: 7rem; } }
-  .form__reacties-text {
-    font-size: 1.4rem;
-    padding-top: 2rem;
-    border-bottom: 1px solid; }
-    @media only screen and (max-width: 56.25em) {
-      .form__reacties-text {
-        border-bottom: none; } }
-  .form__reacties-comment {
-    margin-right: 10rem; }
-    @media only screen and (max-width: 56.25em) {
-      .form__reacties-comment {
+  .form__reacties {
+    height: 300px;
+    overflow-y: scroll; }
+    .form__reacties-comment {
+      background-color: rgba(184, 166, 250, 0.425);
+      border-radius: 3px;
+      border: 1px solid;
+      margin-right: 10rem; }
+      @media only screen and (max-width: 56.25em) {
+        .form__reacties-comment {
+          margin: 0;
+          padding-bottom: 2rem;
+          font-weight: bolder; } }
 
-height: 300px;
-    overflow-y: scroll;
+.list-item > p {
+  margin-right: 10rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: .8rem 2rem; }
 
-        margin: 0;
-        padding-bottom: 2rem; } }
-
-form-list>p {
-width: 70%
-  border-bottom: solid 1px;
-  font-size: 1.5rem; }
+.list-item > li {
+  text-transform: uppercase;
+  padding-top: 2rem;
+  color: rgba(2, 2, 2, 0.7); }
+  .list-item > li:not(:first-child) {
+    border-top: 1px solid; }
